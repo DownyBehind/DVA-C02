@@ -6,6 +6,8 @@ Ultimate AWS Certified Developer Associate 2024 NEW DVA-C02
 
 https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/?couponCode=ACCAGE0923
 
+AWS DVA 
+
 B] If you first completed my AWS Certified Solutions Architect course and don't want to re-watch content...
 
 Please watch the following lectures:
@@ -61,3 +63,27 @@ Section 15 - CloudFront
 CloudFront - Caching & Caching Policies
 
 CloudFront - Cache Behaviors
+
+CloudFront - Caching & Caching Invalidations - Hands On
+
+CloudFront - Signed URL / Cookies
+
+CloudFront - Signed URL - Key Groups + Hands On
+
+CloudFront - Advanced Concepts
+
+CloudFront - Real Time Logs
+
+Section 16 - ECS, ECR & Fargate - Docker in AWS
+
+Amazon ECS - Rolling Updates
+
+Amazon ECS Task Definitions - Deep Dive
+
+Amazon ECS Task Definitions - Hands On
+
+Amazon ECS - Task Placements
+
+Amazon ECR - Hands On
+
+And everything from Section 17 onwards
