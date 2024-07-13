@@ -100,4 +100,51 @@ Use Cases:
 
 ## Amazon ECS - Task Placements
 
+When a task of type EC2 is launched, ECS must determine where to place it, with the constraints of CPU, memory, and available port
+
+Similarly, when a service scales in, ECS needs to determine which task to terminate
+
+To assist with this, you can define a task placement strategy and task placement constraints.
+
+Note: this is only for ECS with EC2, not for Fargate
+
+ECS Task Placement Process
+
+- Task placement strategies are a best effort
+- When Amazon ECS places tasks, it uses the following process to select container instances: 
+
+1. Identify the instances that saftify the CPU, memory, and port requirements in the task definition.
+
+2. Identify the instances that satisfy the task placement constraints
+3. Identify the instances that satisfy the task placemnet strategies
+
+Binpack
+
+- Place tasks based on the least available amount of CPU or memory
+- This minimizes the number of instances in use (cost savings)
+
+Random
+
+- Place the task randomly
+
+Spread
+
+- Place the task evenly based on the specified value
+- Example: instanceId, attribute:ecs.availability-zone
+
+you can mix them together
+
+distinctInstance: place each task on a different container instance
+
+memberOf : places task on instances that satisfy an expression 
+- Uses the Cluster Query Language (advanced)
+
+
 ## Amazon ECR - Hands On
+
+- ECR = Elastic Container Registry
+- Store and manage Docker images on AWS
+- Private and Public Repository (Amazon ECR Public Gallery)
+- Fully integrated with ECS, backed by Amazon S3 
+- Access is controlled through IAM (permission errors => policy)
+- Supports image vulnerability scanning, versioning, image tags, image lifecycle,...
